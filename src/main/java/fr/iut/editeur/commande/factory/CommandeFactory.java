@@ -3,6 +3,7 @@ package fr.iut.editeur.commande.factory;
 import fr.iut.editeur.commande.*;
 import fr.iut.editeur.document.Document;
 
+//todo : exo 5.3
 public class CommandeFactory {
 
     private static CommandeFactory instance;
@@ -20,7 +21,7 @@ public class CommandeFactory {
         switch (name) {
             case "ajouter" : return new CommandeAjouter(document, parameters);
             case "remplacer" : return new CommandeRemplacer(document, parameters);
-            case "majuscule" : return new CommandeMajuscule(document, parameters);
+            case "majuscules" : return new CommandeMajuscule(document, parameters);
             default: return null;
         }
     }
