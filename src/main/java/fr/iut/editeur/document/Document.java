@@ -41,6 +41,7 @@ public class Document {
 
     public void clear () {
         texte = "";
+
     }
     @Override
     public String toString() {
