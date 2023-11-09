@@ -40,7 +40,7 @@ public class Document {
     }
 
     public void clear () {
-        texte = "clear";
+        texte = "";
     }
     @Override
     public String toString() {
@@ -48,4 +48,9 @@ public class Document {
     }
 
 
+    public void inserer (int start, String Ajout){
+        String leftPart = texte.substring(0, start);
+        String rightPart = texte.substring(start);
+        texte = leftPart + Ajout + rightPart;
+    }
 }
