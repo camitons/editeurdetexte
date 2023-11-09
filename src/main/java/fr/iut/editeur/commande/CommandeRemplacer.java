@@ -20,4 +20,9 @@ public class CommandeRemplacer extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public void getDescriptionCommande() {
+        System.out.println("Remplacer");
+    }
+
 }
