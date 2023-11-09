@@ -40,7 +40,7 @@ public class Document {
     }
 
     public void clear () {
-        texte = "clear";
+        texte = "";
     }
     @Override
     public String toString() {
