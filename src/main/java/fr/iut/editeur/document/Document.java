@@ -38,6 +38,10 @@ public class Document {
         String rightPart = texte.substring(end);
         texte = leftPart + rightPart;
     }
+
+    public void clear () {
+        texte = "";
+    }
     @Override
     public String toString() {
         return this.texte;
